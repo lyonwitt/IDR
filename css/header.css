@@ -1,0 +1,151 @@
+.container {
+    width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    background: #1A0002;
+    z-index: 9;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-darkred {
+    background-color: #1A0002;
+    padding: 0;
+}
+
+.header-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.header-logo {
+    width: 150px;
+}
+
+.logo-open {
+    color: white;
+}
+
+.logo-open i {
+    font-size: 25px;
+}
+
+.header li {
+    margin: 24px 0;
+}
+
+.header li a {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+.padding-t-b-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header .header-sub-menu-item p {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+}
+
+.header-sub-menu {
+    background: #40050A;
+    border-radius: 4px;
+    padding: 1rem 0 1rem 1rem; 
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-actions-container {
+    border-top: 1px solid #615f5f
+}
+
+.header-desktop {
+    background: #1A0002;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header-desktop .header-images {
+    margin: 20px 0;
+}
+
+.header-desktop ul {
+    margin-bottom: 0 !important;
+}
+
+.header-desktop li a {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+}
+
+/* .header-desktop li a:hover {
+    color: #D9985F;
+    font-family: 'Merriweather', serif;
+    text-decoration: none;
+} */
+
+.margin-right-40 {
+    margin-right: 40px;
+}
+
+.width-80-porcent {
+    width: 80%;
+}
+
+.areas-dropdown {
+    cursor: pointer;
+    position: static;
+    z-index: 1;
+}
+
+.areas-dropdown li {
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+
+.areas-dropdown li:hover {
+    color: #D9985F;
+}
+
+.ul-dropdown {
+    background-color: #1A0002;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.ul-dropdown li:first-child {
+    cursor: default;
+}
+
+.areas-dropdown:hover .ul-dropdown {
+    background: #1A0002;
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+    right: 3%;
+    width: 220px;
+    padding: 30px 15px 20px 15px;
+    -webkit-transition: all .5s, background, 2s .5s linear;
+    transition: all .5s, background 2s .5s linear;
+}

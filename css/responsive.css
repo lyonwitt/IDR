@@ -1,0 +1,17 @@
+@media screen and (min-width: 1024px){
+    .header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .header-desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .container {
+        width: 1280px;
+    }
+}

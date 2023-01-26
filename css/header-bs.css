@@ -1,0 +1,44 @@
+.header button.logo-open {
+    background: none;
+    border-style: none;
+    outline: none;
+    font-family: 'Merriweather', serif;
+}
+
+.header .collapsing {
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: height 0.5s ease;
+}
+
+.header .collapse {
+    height: 580px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.header-desktop .btn:hover {
+    background-color: #D9985F !important;
+    border: 1px solid #D9985F !important;
+    color: #1A0002 !important;
+}
+
+.header-desktop button.logo-open {
+    background: none;
+    border-style: none;
+    outline: none;
+    font-family: 'Merriweather', serif;
+}
+
+.header-desktop button.logo-open:hover {
+    background: none;
+    border-style: none;
+    outline: none;
+    font-family: 'Merriweather', serif;
+    color: #D9985F;
+}
+
+.header-desktop .border-top {
+    border-top: 1px solid #422426 !important;
+}
