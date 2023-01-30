@@ -5,23 +5,37 @@
     font-family: 'Merriweather', serif;
 }
 
-.header .collapsing {
-    height: 0 !important;
+.header.mobile .collapsing {
+    max-height: 0 !important;
     padding: 0 !important;
     margin: 0 !important;
-    transition: height 0.5s ease;
+    transition: max-height 0.5s ease !important;
 }
 
-.header .collapse {
-    height: 580px !important;
+.header.mobile .collapse {
+    max-height: 650px !important;
     padding: 0 !important;
     margin: 0 !important;
+}
+
+.header .btn:hover {
+    background-color: #D9985F !important;
+    border: 1px solid #D9985F !important;
+    color: #1A0002 !important;
+}
+
+.header .btn:focus, .btn-primary {
+    box-shadow: none !important;
 }
 
 .header-desktop .btn:hover {
     background-color: #D9985F !important;
     border: 1px solid #D9985F !important;
     color: #1A0002 !important;
+}
+
+.header-desktop .btn:focus, .btn-primary {
+    box-shadow: none !important;
 }
 
 .header-desktop button.logo-open {
