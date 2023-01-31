@@ -1,0 +1,35 @@
+footer .bg-dark {
+    background-color: #1A0002 !important;
+}
+
+footer p {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+footer a {
+    color: #FFF !important;
+}
+
+footer li {
+    width: 30px;
+    height: 30px;
+    background-color: #442102;
+}
+
+footer p.text-center {
+    font-size: 14px;
+}
+
+.color-golden {
+    color: #D9985F !important;
+}
+
+.bg-golden {
+    background-color: #D9985F !important;
+    border: 1px solid #D9985F !important;
+}
+
+footer p.text-muted {
+    font-size: 14px;
+}
