@@ -31,6 +31,7 @@ footer p.text-center {
     border: 1px solid #D9985F !important;
 }
 
-footer p.text-muted {
+footer p.text-muted a {
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif !important;
 }
