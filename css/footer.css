@@ -18,7 +18,8 @@ footer li {
 }
 
 footer p.text-center {
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .color-golden {
