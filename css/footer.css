@@ -35,3 +35,12 @@ footer p.text-muted a {
     font-size: 14px;
     font-family: 'Open Sans', sans-serif !important;
 }
+
+footer a.text-warning {
+    color: #E5AD10;
+}
+
+footer a.text-warning:hover {
+    color: #c1910d;
+    text-decoration: none !important;
+}
