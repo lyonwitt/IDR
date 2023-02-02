@@ -9,6 +9,12 @@ footer p {
 
 footer a {
     color: #FFF !important;
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    color: #E5AD10 !important;
+    text-decoration: none !important;
 }
 
 footer li {
@@ -37,10 +43,9 @@ footer p.text-muted a {
 }
 
 footer a.text-warning {
-    color: #E5AD10;
+    color: #E5AD10 !important;
 }
 
 footer a.text-warning:hover {
-    color: #c1910d;
-    text-decoration: none !important;
+    color: #E5AD10 !important;
 }
