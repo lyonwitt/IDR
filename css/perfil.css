@@ -1,0 +1,121 @@
+.perfil-content a {
+    text-decoration: none !important;
+}
+
+.perfil-content h6 {
+    line-height: 1.5 !important;
+    margin-bottom: 0 !important;
+}
+
+.perfil-content .cover-adv {
+    width: 100%;
+    max-height: 250px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.perfil-content .cover-adv .img-cover {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    width: 100%;
+    max-height: 120px;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.perfil-content .img-perfil-adv {
+    width: 140px;
+    height: 140px;
+    top: 75px;
+}
+
+.perfil-content .datas-adv {
+    margin-top: 40px;
+}
+
+.perfil-content .datas-adv p.text-light.bg-secondary {
+    color: #604D31 !important;
+    background-color: #DFC195 !important;
+}
+
+.perfil-content i.facebook {
+    color: #1976D2;
+}
+
+.perfil-content i.linkedin {
+    color: #0077B5;
+}
+
+.perfil-content i.instagram {
+    background-image: linear-gradient(45deg, #FFCA52, #FF553E, #CE3A9F);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black; 
+}
+
+.perfil-content h4.text-dark,h5.text-dark {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.perfil-content .icon-contribution {
+    width: 87px;
+    height: 87px;
+    background-color: #251200 !important;
+}
+
+.perfil-content .icon-contribution .img-fluid {
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+/* PERFIL BREAKPOINT */
+@media screen and (min-width: 375px){
+    .perfil-content .cover-adv .img-cover {
+        max-height: 150px;
+    }
+
+    .perfil-content .img-perfil-adv {
+        width: 150px;
+        height: 150px;
+        top: 100px;
+    }
+
+    .perfil-content .datas-adv {
+        margin-top: 45px;
+    }
+}
+
+@media screen and (min-width: 425px){
+    .perfil-content .cover-adv .img-cover {
+        max-height: 180px;
+    }
+
+    .perfil-content .img-perfil-adv {
+        width: 180px;
+        height: 180px;
+        top: 115px;
+    }
+
+    .perfil-content .datas-adv {
+        margin-top: 65px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .perfil-content .cover-adv .img-cover {
+        max-height: 250px;
+    }
+
+    .perfil-content .img-perfil-adv {
+        width: 190px;
+        height: 190px;
+        top: 180px;
+    }
+
+    .perfil-content .social-media {
+        margin-top: 65px;
+    }
+}

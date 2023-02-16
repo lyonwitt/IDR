@@ -1,0 +1,121 @@
+.general-content.bg-light {
+    width: 100%;
+    background-color: #E5E5E5 !important;
+}
+
+.general-content .bg-light.rounded {
+    border-radius: 4px !important;
+}
+
+.general-content .border-bottom.border-top {
+    border-bottom: 1px solid #CCC !important;
+    border-top: 1px solid #CCC !important;
+}
+
+.general-content a {
+    text-decoration: none !important;
+}
+
+.general-content .card-deck a:hover {
+    opacity: 0.8;
+}
+
+.row.text-g-content h6 {
+    color: #333 !important;
+    font-size: 14px;
+    font-family: 'Merriweather', sans-serif;
+    margin-bottom: 0 !important;
+}
+
+.text-g-content p {
+    color: #676565 !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0 !important;
+}
+
+.text-g-content .fa-magnifying-glass, .fa-calendar, .fa-thumbs-up {
+    color: #E5AD10;
+}
+
+.general-content h3.tex-dark, h5.text-dark {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.input-areas {
+    color: #E5AD10 !important;
+}
+
+.a-advogados {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 14px;
+    color: #E5AD10 !important;
+    text-decoration: none;
+}
+
+.a-advogados:hover {
+    color: #c1910d !important;
+    text-decoration: none !important;
+}
+
+.name-and-desc h6 {
+    font-family: 'Roboto', sans-serif !important;
+    color: #4F4F4F !important;
+}
+
+.name-and-desc p {
+    font-family: 'Roboto', sans-serif !important;
+    color: #BDBDBD !important;
+    font-size: 14px;
+}
+
+.general-content .bottom-g-content {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.general-content .bottom-g-content h5 {
+    color: #282A2E !important;
+    font-size: 24px !important;
+}
+
+.general-content .bottom-g-content h6 {
+    color: #282A2E !important;
+    font-size: 15px !important;
+}
+
+.general-content .bottom-g-content .btn-secondary {
+    font-weight: 500 !important;
+    background-color: #E5AD10 !important;
+    color: #FFF !important;
+}
+
+.general-content .bottom-g-content .btn-secondary:hover {
+    background-color: #D9985F !important;
+    color: #FFF !important;
+}
+
+.general-content .advogados .img-advogado {
+    width: 58px !important;
+    height: 58px !important;
+}
+
+.general-content .card-deck {
+    max-height: 150px;
+    max-width: 560px;
+}
+
+.general-content .advogados .card-deck p {
+    margin-bottom: 0 !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+@media screen and (min-width: 992px){
+    .general-content .advogados .col-lg-4 {
+        max-width: 25.6%;
+    }
+}

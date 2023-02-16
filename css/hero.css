@@ -1,0 +1,42 @@
+.hero.bg-secondary {
+    background-color: #251200 !important;
+}
+
+.hero p {
+    font-family: 'Merriweather', sans-serif !important;
+}
+
+.hero h3, h5 {
+    color: #FFF !important;
+    line-height: 1.6 !important;
+}
+
+.hero label {
+    color: #FFF !important;
+    font-size: 12px !important;
+}
+
+.hero select {
+    color: #999 !important;
+    font-size: 12px !important;
+}
+
+.hero select:focus {
+    box-shadow: none !important;
+}
+
+.hero .btn:focus, .btn-primary:focus {
+    box-shadow: none !important;
+}
+
+.hero .btn-primary {
+    background-color: #E5AD10 !important;
+    font-size: 14px !important;
+    color: #251200 !important;
+}
+
+.hero .btn-primary:hover {
+    background-color: #D9985F !important;
+    border: 1px solid #D9985F !important;
+    text-decoration: none !important;
+}

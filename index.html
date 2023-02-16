@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/g-content.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut icon" type="image/png"
         href="assets/logo-sm-ac9756d45bf242e9107d460a712886b922f43bad202665f07d5b4d8d078974af.png">
@@ -26,7 +28,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="h-100">
     <!-- HEADER -->
     <header>
         <!-- NAVBAR DESKTOP -->
@@ -128,10 +130,413 @@
             </div>
         </nav>
     </header>
-    
+    <!-- HERO -->
+    <section class="hero bg-secondary">
+        <div class="container">
+            <div class="row d-flex justify-content-between pt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                    <h5 class="font-weight-bold d-block d-sm-block d-md-none d-lg-none d-xl-none">Agende agora uma
+                        reunião com um(a) advogado(a) próximo a você</h5>
+                    <h3 class="font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block">Agende agora uma
+                        reunião com um(a) advogado(a) próximo a você</h3>
 
+                    <div class="mt-4 pb-4">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Escolha uma especialidade</label>
+                            <select class="form-control" id="advAreas" onChange="area_selected()">
+                                <option value="0" selected disabled>
+                                    <p>Selecione...</p>
+                                </option>
+                                <option value="1">Administrativo</option>
+                                <option value="2">Aduaneiro</option>
+                                <option value="3">Advocacia de apoio</option>
+                                <option value="4">Aeronáutico</option>
+                                <option value="5">Agrário</option>
+                                <option value="6">Ambiental</option>
+                                <option value="7">Arbitragem, conciliação e mediação</option>
+                                <option value="8">Autoral</option>
+                                <option value="9">Bancário e Financeiro</option>
+                                <option value="10">Biotecnológico</option>
+                                <option value="11">Cível</option>
+                                <option value="13">Comércio Internacional</option>
+                                <option value="14">Concorrencial</option>
+                                <option value="15">Constitucional</option>
+                                <option value="16">Consumidor</option>
+                                <option value="17">Contratos</option>
+                                <option value="18">Desportivo</option>
+                                <option value="19">Direito das Águas</option>
+                                <option value="20">Direito do Terceiro Setor</option>
+                                <option value="21">Econômico</option>
+                                <option value="22">Eleitoral</option>
+                                <option value="23">Empresarial Penal</option>
+                                <option value="24">Energia</option>
+                                <option value="25">Falência e Recuperação Judicial</option>
+                                <option value="26">Família e Sucessões</option>
+                                <option value="27">Fusões e Aquisições</option>
+                                <option value="28">Imobiliário</option>
+                                <option value="29">Importação e Exportação</option>
+                                <option value="30">Infraestrutura</option>
+                                <option value="31">Internacional</option>
+                                <option value="32">Internet e e-Commerce</option>
+                                <option value="33">Marítimo e Portuário</option>
+                                <option value="34">Mercado de Capitais</option>
+                                <option value="35">Mineração</option>
+                                <option value="36">Operações Financeiras</option>
+                                <option value="37">Penal</option>
+                                <option value="38">Petróleo e Gás</option>
+                                <option value="39">Previdenciário</option>
+                                <option value="40">Project Finance</option>
+                                <option value="41">Propriedade Intelectual</option>
+                                <option value="43">Regulatório</option>
+                                <option value="44">Sanitário</option>
+                                <option value="45">Seguros</option>
+                                <option value="46">Sindical</option>
+                                <option value="47">Societário</option>
+                                <option value="48">Telecomunicações</option>
+                                <option value="49">Trabalhista</option>
+                                <option value="50">Tributário</option>
+                                <option value="51">Project Finance</option>
+                                <option value="52">Compliance</option>
+                                <option value="53">Empresarial</option>
+                                <option value="54">LGPD</option>
+                                <option value="55">Médico</option>
+                                <option value="56">Responsabilidade Civil</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-2">
+                            <div class="form-group select mr-2 w-50">
+                                <label for="exampleFormControlSelect1">Escolha o Estado</label>
+                                <select class="form-control" id="uf">
+                                    <option selected disabled value="0">Selecione...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group select w-50">
+                                <label for="exampleFormControlSelect1">Escolha a Cidade</label>
+                                <select class="form-control" id="city" disabled>
+                                    <option selected disabled value="0">Selecione...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary border-0 mt-3 px-5">Pesquisar</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-content-end justify-content-end">
+                    <img src="./assets/image 5.png" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block"
+                        alt="Homem com terno falando ao celular e sorrindo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GENERAL CONTENT -->
+    <section class="general-content bg-light pb-2">
+        <!-- TOP GENERAL CONTENT -->
+        <div class="border-bottom d-flex justify-content-center">
+            <div class="container">
+                <div class="row text-g-content d-flex justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-4 pt-4 pb-4">
+                        <div class="d-flex align-items-start">
+                            <i class="fa fa-magnifying-glass text-warning"></i>
+                            <h6 class="ml-2 text-dark font-weight-bold">Encontre especialistas</h6>
+                        </div>
+
+                        <p class="mt-2 text-muted">Busque os melhores profissionais do direito em sua região. Filtre
+                            pela especialidade.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 pt-4 pb-4">
+                        <div class="d-flex align-items-start">
+                            <i class="fa-regular fa-calendar text-warning"></i>
+                            <h6 class="ml-2 text-dark font-weight-bold">Agende uma reunião</h6>
+                        </div>
+
+                        <p class="mt-2 text-muted">Consulte a disponibilidade dos especialistas e marque uma reunião
+                            online ou presencial.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-4 pt-4 pb-4">
+                        <div class="d-flex align-items-start">
+                            <i class="fa-regular fa-thumbs-up text-warning"></i>
+                            <h6 class="ml-2 text-dark font-weight-bold">Avalie o serviço</h6>
+                        </div>
+
+                        <p class="mt-2 text-muted">Não se esqueça de avaliar todos os serviços utilizados. Aqui a sua
+                            avaliação é essencial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FILTER RESULT -->
+        <div class="container">
+            <h5 class="text-dark font-weight-bold pt-4 pb-4 d-block d-sm-block d-md-none d-lg-none d-xl-none">Perfis
+                mais acessados</h5>
+            <h3 class="text-dark font-weight-bold pt-4 pb-4 d-none d-sm-none d-md-block d-lg-block d-xl-block">Perfis
+                mais acessados</h3>
+            <!-- <p class="border-bottom border-top pt-1 pb-1 text-muted">Especialidade: <input class="input-areas text-warning bg-transparent border-0" id="area-selected" type="text" disabled></p> -->
+
+            <!-- ADVOGADOS FIRST PART -->
+            <div class="d-flex align-items-center justify-content-between mt-3">
+                <p class="text-dark">Conheça os Advogados</p>
+                <p class="a-advogados text-uppercase"><a href="" class="text-warning">ver todos</a></p>
+            </div>
+
+            <div class="advogados row p-2 d-flex align-content-between justify-content-between">
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <a href="./perfil/lyonwittemar.html">
+                        <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                            <div class="img-advogado w-25 rounded-circle">
+                                <img class="img-fluid rounded-circle" src="./assets/perfil.png">
+                            </div>
+
+                            <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                                <h6 class="text-dark">Lyon Wittemar</h6>
+                                <p class="text-muted">Advogado Criminalista com ênfase na área de redução de penas graves</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_2.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Wilson Torres</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_3.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Jennifer Castro</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_4.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Catharina Ramos</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_5.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Marcos Hermann</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_6.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Valéria Gonçalves</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_7.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Antenor Martins</h6>
+                            <p class="text-muted">Advogado Criminalista com especilização em resolução de conflitos jurídicos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_8.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Priscila Cavallieri</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADVOGADOS SECOND PART -->
+            <div class="d-flex align-items-center justify-content-between mt-3">
+                <p class="text-dark">Conheça os Advogados</p>
+                <p class="a-advogados text-uppercase"><a href="" class="text-warning">ver todos</a></p>
+            </div>
+
+            <div class="advogados row p-2 d-flex align-content-between justify-content-between">
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <a href="./perfil/lyonwittemar.html"><img class="img-fluid rounded-circle"
+                                    src="./assets/perfil.png"></a>
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <a href="./perfil/lyonwittemar.html">
+                                <h6 class="text-dark">Lyon Wittemar</h6>
+                            </a>
+                            <p class="text-muted">Advogado Criminalista com ênfase na área de redução de penas graves</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_2.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Wilson Torres</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_3.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Jennifer Castro</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_4.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Catharina Ramos</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_5.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Marcos Hermann</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_6.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Valéria Gonçalves</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex align-items-start p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_7.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Antenor Martins</h6>
+                            <p class="text-muted">Advogado Criminalista com especilização em resolução de conflitos jurídicos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                    <div class="col-12 bg-light border d-flex p-2 rounded">
+                        <div class="img-advogado w-25 rounded-circle">
+                            <img class="img-fluid rounded-circle" src="./assets/perfil_8.jpg">
+                        </div>
+
+                        <div class="w-75 ml-4 d-flex flex-column name-and-desc pr-2">
+                            <h6 class="text-dark">Priscila Cavallieri</h6>
+                            <p class="text-muted">Advogado Criminalista</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 border-top"></div> <!-- line division -->
+
+        <!-- BOTTOM GENERAL CONTENT -->
+        <div class="container">
+            <div class="bottom-g-content row d-flex align-items-center justify-content-between pb-5 mt-4 pl-2 pr-2">
+                <div class="col-12 col-sm-12 col-md-7">
+                    <div class="p-1">
+                        <h6 class="text-dark font-weight-bold d-block d-sm-block d-md-none d-lg-none d-xl-none">Quer ter
+                            seu nome listado aqui?</h6>
+                        <h5 class="text-dark font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block">Quer
+                            ter seu nome listado aqui?</h5>
+                        <h6 class="text-muted font-weight-normal d-block d-sm-block d-md-none d-lg-none d-xl-none">Se
+                            cadastre gratuitamente para fazer parte.</h6>
+                        <h5 class="text-muted font-weight-normal d-none d-sm-none d-md-block d-lg-block d-xl-block">Se
+                            cadastre gratuitamente para fazer parte.</h5>
+                    </div>
+                </div>
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none pl-3">
+                    <a class="btn btn-secondary text-uppercase border-0 d-block d-sm-block d-md-none d-lg-none d-xl-none pr-5 pl-5"
+                        href="http://direitoreal.com.br/cadastro">Cadastrar</a>
+                </div>
+                <div
+                    class="d-flex justify-content-end col-12 col-sm-12 col-md-5 d-none d-sm-none d-md-flex d-lg-flex d-xl-flex">
+                    <a class="btn btn-secondary text-uppercase border-0 col-md-8 col-lg-6 d-none d-sm-none d-md-block d-lg-block d-xl-block"
+                        href="http://direitoreal.com.br/cadastro">Cadastrar</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER -->
-    <footer class="mt-4">
+    <footer>
         <div class="bg-dark border-bottom">
             <div class="container">
                 <div class="row">
@@ -150,54 +555,65 @@
                     </div>
 
                     <div class="col-sm-12 col-md-6 col-md-offset-1 col-lg-4 p-3 mt-3">
-                        <span class="text-uppercase text-warning"><h6 class="color-golden">Fale conosco</h6></span>
+                        <span class="text-uppercase text-warning">
+                            <h6 class="color-golden">Fale conosco</h6>
+                        </span>
 
-                        <p class="text-muted mt-3"><i class="fa-regular fa-comments fa-2x color-golden"></i><a class="text-white ml-2"
-                                target="_blank" href="/faq">FAQ</a></p>
-                        <p class="text-muted "><i class="fa-brands fa-whatsapp fa-2x color-golden"></i><a class="text-white ml-2"
-                                target="_blank" href="https://api.whatsapp.com/send?phone=5521995172299">+55 21
+                        <p class="text-muted mt-3"><i class="fa-regular fa-comments fa-2x color-golden"></i><a
+                                class="text-white ml-2" target="_blank" href="/faq">FAQ</a></p>
+                        <p class="text-muted "><i class="fa-brands fa-whatsapp fa-2x color-golden"></i><a
+                                class="text-white ml-2" target="_blank"
+                                href="https://api.whatsapp.com/send?phone=5521995172299">+55 21
                                 99517-2299</a></p>
-                        <p class="text-muted "><i class="fa-regular fa-envelope fa-2x color-golden"></i><a class="text-white careers ml-2"
-                                target="_blank"
+                        <p class="text-muted "><i class="fa-regular fa-envelope fa-2x color-golden"></i><a
+                                class="text-white careers ml-2" target="_blank"
                                 href="https://direitoreal.zendesk.com/hc/pt-br/requests/new">atendimento@direitoreal.com.br</a>
                         </p>
 
                         <ul class="w-75 d-flex align-items-center justify-content-between list-unstyled mt-3">
-                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a href="https://www.facebook.com/InstitutodeDireitoReal/"
-                                    class="text-info" target="_blank" rel="noopener" aria-label="Facebook"><i
+                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a
+                                    href="https://www.facebook.com/InstitutodeDireitoReal/" class="text-info"
+                                    target="_blank" rel="noopener" aria-label="Facebook"><i
                                         class="fab fa-facebook-f color-golden"></i></a></li>
-                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a href="https://www.instagram.com/institutodedireitoreal/"
-                                    class="text-info" target="_blank" rel="noopener" aria-label="Instagram"><i
+                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a
+                                    href="https://www.instagram.com/institutodedireitoreal/" class="text-info"
+                                    target="_blank" rel="noopener" aria-label="Instagram"><i
                                         class="fab fa-instagram color-golden"></i></a></li>
                             <li class=" d-flex align-items-center justify-content-center rounded-circle"><a
                                     href="https://www.linkedin.com/company/instituto-de-direito-real/about/"
                                     class="text-info" target="_blank" rel="noopener" aria-label="Linkedin"><i
                                         class="fab fa-linkedin-in color-golden"></i></a></li>
-                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a href="https://twitter.com/direitoreal_" class="text-info"
-                                    target="_blank" rel="noopener" aria-label="Twitter"><i
-                                        class="fab fa-twitter color-golden"></i></a></li>
-                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a href="https://www.youtube.com/c/InstitutodeDireitoReal"
-                                    class="text-info" target="_blank" rel="noopener" aria-label="Youtube"><i
+                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a
+                                    href="https://twitter.com/direitoreal_" class="text-info" target="_blank"
+                                    rel="noopener" aria-label="Twitter"><i class="fab fa-twitter color-golden"></i></a>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center rounded-circle"><a
+                                    href="https://www.youtube.com/c/InstitutodeDireitoReal" class="text-info"
+                                    target="_blank" rel="noopener" aria-label="Youtube"><i
                                         class="fab fa-youtube color-golden"></i></a></li>
                         </ul>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-md-offset-1 col-lg-4 p-3 mt-3">
-                        <span class="text-uppercase text-warning"><h6 class="color-golden">newsletter</h6></span>
-                        <p class="mt-4 mb-2 text-white">Cadastre seu e-mail para receber doutrina e jurisprudência atualizadas
+                    <div class="col-sm-12 col-md-9 col-md-offset-1 col-lg-4 p-3 mt-3">
+                        <span class="text-uppercase text-warning">
+                            <h6 class="color-golden">newsletter</h6>
+                        </span>
+                        <p class="mt-4 mb-2 text-white">Cadastre seu e-mail para receber doutrina e jurisprudência
+                            atualizadas
                             diariamente.</p>
 
                         <form class="new_newsletter" id="new_newsletter" action="/newsletters" accept-charset="UTF-8">
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Insira seu melhor Email" aria-label="Insira seu melhor Email" aria-describedby="button-addon2">
+                                <input type="text" class="form-control" placeholder="Insira seu melhor Email"
+                                    aria-label="Insira seu melhor Email" aria-describedby="button-addon2">
                                 <div class="input-group-append">
-                                    <button class="bg-golden btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa fa-chevron-right text-light"></i></button>
+                                    <button class="bg-golden btn btn-outline-secondary" type="button"
+                                        id="button-addon2"><i class="fa fa-chevron-right text-light"></i></button>
                                 </div>
                             </div>
                         </form>
                         <div class="mb-3">
-                            <a target="_blank"
-                                href="https://br.jooble.org/vagas-de-emprego-advogado">Carreiras</a><br>
+                            <a target="_blank" href="https://br.jooble.org/vagas-de-emprego-advogado">Carreiras</a><br>
                             <a target="_blank" href="/live">Lives</a>
                         </div>
                     </div>
@@ -206,24 +622,40 @@
             </div>
         </div>
         <div class="bg-dark pt-3 pb-3">
-            <p class="text-center text-white">
-                &#169; 2023 Direito Real. Todos os direitos reservados. <a href="#" class="text-warning">Termos de Uso</a> | <a class="text-warning"
-                    href="#">Política de Privacidade</a>
-            </p>
+            <div class="container px-1">
+                <!-- Até 767px -->
+                <div class="row w-100 m-0 m-0 d-flex d-sm-flex d-md-none">
+                    <div class="col-12 col-sm-12 d-flex align-items-center justify-content-center p-1">
+                        <p class="text-center text-white">&#169; 2023 Direito Real. Todos os direitos reservados.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 d-flex align-items-center justify-content-center p-1">
+                        <p><a href="#" class="text-warning">Termos de Uso</a> <span
+                                class="text-white">&nbsp;|&nbsp;</span> <a class="text-warning" href="#">Política de
+                                Privacidade</a></p>
+                    </div>
+                </div>
+                <!-- A partir de 768px -->
+                <div class="row w-100 m-0 m-0 d-none d-sm-none d-md-flex align-items-center justify-content-center">
+                        <p class="text-center text-white">&#169; 2023 Direito Real. Todos os direitos reservados.
+                            <a href="#" class="text-warning">Termos de Uso</a>&nbsp;|&nbsp;<a class="text-warning" href="#">Política de Privacidade</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
-    
+
     <!-- SCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
-
 </body>
+
 </html>
